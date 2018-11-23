@@ -25,7 +25,7 @@ public class ControllerAspect {
 
     @Before("log() && this(proxy)")
     public void beforeAdvide(JoinPoint point, Object proxy){
-    	//kfldsjkflsjfkdl
+    	
         Signature signature = point.getSignature();
         RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = (HttpServletRequest) requestAttributes.resolveReference(RequestAttributes.REFERENCE_REQUEST);
